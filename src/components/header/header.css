@@ -1,8 +1,8 @@
 header {
     height: 100vh;
     padding-top: 2rem;
-    overflow: hidden;
-   
+    overflow: visible;
+   padding-bottom: 5rem;
 
 
 }
@@ -10,12 +10,12 @@ header {
     text-align: center;
     height: 100%;
     position: relative;
-    z-index: 2;
+    
 }
 
 /* -----------------------------CTA-----------------------*/
 .cta {
-    margin-top: 2.5rem;
+    margin-top: 1.5rem; /* was 2.5. consider changing again to 2 */
     display: flex;
     gap: 1.2rem;
     justify-content: center;
@@ -43,12 +43,12 @@ header {
 .me {
     background: linear-gradient(var(--color-primary), transparent);
     width: 22rem;
-    height: 30em;
+    height: 22rem;
     position: absolute;
     left: calc(50% - 11rem);
-    margin-top: 4rem;
+    margin-top: 2rem;
     border-radius: 12rem 12rem 2rem 2rem;
-    overflow: hidden;
+    overflow: visible;
     padding: 0rem 1.5rem 1.5rem 1.5rem;
     
 }
@@ -83,6 +83,11 @@ header {
        .scroll__down {
         display: none;
        }
+     /* Good for now, but 
+        .name {
+        overflow: hidden;
+        display:inline-block;
+     } */
 }
 
 
