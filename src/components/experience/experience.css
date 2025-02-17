@@ -1,6 +1,96 @@
 .experience__container {
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
     /* padding: 100px; */
 }
+
+.experience__container > div {
+    background: var(--color-bg-variant);
+    padding: 2.4rem 5rem; /* 2.4 rem top bottom, 5 rem left right*/
+    border-radius: 2rem;  /* */
+    border: 1px solid transparent;
+}
+
+.experience__container > div:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+
+#experience h5,
+#experience h2 {
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.experience__container > div h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+    display: block;
+    
+    max-width: 14ch;
+    margin: 0 auto;
+    text-wrap: break-word;
+}
+
+.experience__content {
+display: grid;
+grid-template-columns: 1fr 1fr;
+row-gap: 2rem;
+}
+
+.experience__details {
+    display: flex;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.experience__details .experience__details-icon {
+    margin-top: 6px;
+    color: var(--color-primary) !important;
+    fill: var(--color-primary) !important; 
+}
+
+.experience__backend h3,
+.experience__frontend h3 {
+    width: 12ch; /* Adjust based on what fits */
+    justify-content: center;
+    word-wrap: break-word;
+}
+
+
+/* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
+@media screen and (max-width: 1024px) {
+    .experience__container {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+  
+    .experience__container > div {
+      width: 80%;
+      padding: 2rem;
+      margin: 0 auto;
+    }
+  
+    .about__content p {
+      margin: 1rem 0 1.5rem;
+    }
+  }
+  
+  /* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
+  @media screen and (max-width: 600px) {
+    .experience__container {
+        gap: 1rem;
+    }
+
+    .experience__container > div {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+  }

@@ -12,9 +12,9 @@ const About = () => {
         <h2> About Me</h2>
 
         <div className="container about__container">
-          <div className="about_me">
+          <div className="about__me">
             <div className="about__me-image">
-              <img src = {ME} alt="About Image"/>
+              <img src={ME} alt="About Image"/>
           </div>
         </div>
 
@@ -23,7 +23,7 @@ const About = () => {
             <article className="about__card">
             <FaAward className="about__icon"/>
               <h5>Experience</h5>
-              <small> 1 Year Working </small>
+              <small> 3.5 Year Working </small>
             </article>
 
             <article className="about__card">

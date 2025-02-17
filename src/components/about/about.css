@@ -1,12 +1,20 @@
 .about__container {
     display: grid;
-    grid-template-colums: 35% 50%;
+    grid-template-columns: 35% 50%;
     gap: 15%;
 }
 
+.about__content {
+  text-align: center;
+}
+
+
 .about__me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1/1; /* height match width */
     
     background: linear-gradient(
         45deg,
@@ -22,7 +30,7 @@
 .about__me-image {
     border-radius: 2rem;
     overflow: hidden;
-     /* transform: rotate(10deg);  */
+      transform: rotate(10deg);  
     transition: var(--transition);
     width: 22rem;
     height: 22rem;
@@ -30,11 +38,11 @@
     padding: 2px;
     
 }
-.about__me-image:hoover{
+.about__me-image:hover {
     transform: rotate(0);
 }
 
-.about__cards{
+.about__cards {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 1.5rem;
@@ -53,7 +61,7 @@
     background:transparent;
     border-color: var(--color-primary-variant);
 }
-.about__icon{
+.about__icon {
     color: var(--color-primary);
     font-size: 1.4rem;
     margin-bottom: 1rem;
@@ -71,6 +79,9 @@
     color: var(--color-light);
 }
 
+.btn {
+  margin-top: 0;
+}
 
 
 /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
@@ -79,6 +90,9 @@
       grid-template-columns: 1fr;
       gap: 0;
     }
+
+    
+
   
     .about__me {
       width: 50%;
@@ -86,7 +100,7 @@
     }
   
     .about__content p {
-      margin: 1rem 0 1.5rem;
+      margin: 1rem 0 0.5rem;
     }
   }
   
